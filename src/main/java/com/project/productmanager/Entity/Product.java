@@ -7,11 +7,10 @@ import javax.persistence.*;
 @Entity
 @Table
 @Data
-public class Customer {
+public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer customerId;
-    private String fullName;
-    private String phone;
-    private String address;
+    private Integer productId;
+    private String productName;
+    private String description;
 }
