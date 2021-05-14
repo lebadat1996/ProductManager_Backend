@@ -1,4 +1,9 @@
 package com.project.productmanager.Repository;
 
-public interface ProductRepository {
+import com.project.productmanager.Entity.Product;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface ProductRepository extends JpaRepository<Product, Integer> {
 }
